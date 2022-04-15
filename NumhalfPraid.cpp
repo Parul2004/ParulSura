@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     int n;
-    cout<<"Enter the value of row "<<endl;
+    cout<<"Enter the number of rows: "<<endl;
     cin>>n;
     for (int i = 1; i < n+1; i++)
     {
