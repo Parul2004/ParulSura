@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     /*
-        if-else statements
+        if-else statements 
     */
     int age;
     cout << "beta kirpya aapne aayu btao" << endl;
