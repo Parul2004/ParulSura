@@ -28,7 +28,10 @@ int main()
         cout << "aap helping ho 😊😊";
         break;
     }
-
+/* 
+if u want to use curley brackets outside the "cout and break" u can use 
+otherwise its also write without brackets as i have shown u above
+*/
     case 7:
         cout << "u are innocent 😀😀";
          break;
