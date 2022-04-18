@@ -1,5 +1,5 @@
 // C++ Program to search any element or number in an array
- 
+// sirf ya code mene net se uthaya h  
 #include <iostream>
 using namespace std;
    
