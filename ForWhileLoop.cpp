@@ -67,7 +67,8 @@ int main()
     } while (k <= m);
 
     cout << endl;
-    cout << "There i am writing again do-while loop but see it carefully 😃😃." int a = 1;
+    cout << "There i am writing again do-while loop but see it carefully 😃😃.";
+     int a = 1;
     do
     {
         cout << a;
