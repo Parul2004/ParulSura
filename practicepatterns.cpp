@@ -388,7 +388,7 @@ int main()
 
 
     int n = 8;
-    cout<<"Enter the number of rows \n"<<endl;
+    cout<<"Enter the number of rows"<<endl;
     cin>>n;
     for (int i = 0; i < n+1; i++)
     {
@@ -415,6 +415,37 @@ int main()
         }
         cout<<endl;
     }
+
+        break;
+    }
+    case 13:
+    {
+      /*
+            A 
+            B C 
+            D E F 
+            G H I J 
+            K L M N O 
+
+*/
+
+
+    int n;
+    int k = 1;
+    cout<<"Enter the number of rows"<<endl;
+    cin>>n;
+    for (int i = 1; i < n+1; i++)
+    {
+       
+        for (int j = 1; j < i+1; j++)
+        {
+            cout<<char(64+k)<<" ";
+            k++;
+        }
+        cout<<endl;
+    }
+    
+   
 
         break;
     }
