@@ -99,14 +99,14 @@ int main()
     {
         /*
         Write a program in C++ to make such a pattern like right angle triangle using number
-        which will repeat the number for that row. 
+        which will repeat the number for that row.
             Sample Output:
-            Input number of rows: 5                                                                                      
-            1                                                                                                             
-            22                                                                                                      
-            333                                                                                                         
-            4444                                                                                                         
-            55555 
+            Input number of rows: 5
+            1
+            22
+            333
+            4444
+            55555
 
          */
 
@@ -127,28 +127,27 @@ int main()
     case 5:
     {
         /*
-         Write a program in C++ to make such a pattern 
-         like right angle triangle with number increased by 1. 
+         Write a program in C++ to make such a pattern
+         like right angle triangle with number increased by 1.
             Sample Output:
-            Input number of rows: 4                                                                                     
-            1                                                                                  
-            2 3                                                                                                         
-            4 5 6                                                                                                       
-            7 8 9 10  
+            Input number of rows: 4
+            1
+            2 3
+            4 5 6
+            7 8 9 10
 
          */
 
         int n;
-        int k =1;
+        int k = 1;
         cout << "Enter the number of rows" << endl;
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
             for (int j = 1; j < i + 1; j++)
             {
-                cout << k<<" ";
+                cout << k << " ";
                 k++;
-
             }
             cout << endl;
         }
@@ -160,30 +159,29 @@ int main()
         /*
           Write a program in C++ to make such a pattern like a pyramid with numbers increased by 1.
           Sample Output:
-            Input number of rows: 4                                               
-                   1                                                               
-                  2 3                                                              
-                 4 5 6                                                             
-                7 8 9 10  
- 
+            Input number of rows: 4
+                   1
+                  2 3
+                 4 5 6
+                7 8 9 10
+
          */
 
         int n;
-        int k =1;
+        int k = 1;
         cout << "Enter the number of rows" << endl;
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
-            for (int j = 1; j <= n-i+1; j++)
+            for (int j = 1; j <= n - i + 1; j++)
             {
-                cout<<" ";
+                cout << " ";
             }
-            
+
             for (int j = 1; j < i + 1; j++)
             {
-                cout << k<<" ";
+                cout << k << " ";
                 k++;
-
             }
             cout << endl;
         }
@@ -193,33 +191,32 @@ int main()
     case 7:
     {
         /*
-           Write a program in C++ to make such a pattern like a pyramid with an asterisk. 
+           Write a program in C++ to make such a pattern like a pyramid with an asterisk.
            Sample Output:
-           Input number of rows: 5                                               
-             *                                                              
-            * *                                                             
-           * * *                                                            
-          * * * *                                                           
-         * * * * *  
- 
+           Input number of rows: 5
+             *
+            * *
+           * * *
+          * * * *
+         * * * * *
+
          */
 
         int n;
-        
+
         cout << "Enter the number of rows" << endl;
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
-            for (int j = 1; j <= n-i+1; j++)
+            for (int j = 1; j <= n - i + 1; j++)
             {
-                cout<<" ";
+                cout << " ";
             }
-            
+
             for (int j = 1; j < i + 1; j++)
             {
-                cout << "*"<<" ";
-                
-
+                cout << "*"
+                     << " ";
             }
             cout << endl;
         }
@@ -232,31 +229,29 @@ int main()
           Write a program in C++ to make such a pattern like a pyramid using number and
           a number will repeat for a row.
           Sample Output:
-          Input number of rows: 5                                               
-               1                                                              
-              2 2                                                             
-             3 3 3                                                            
-            4 4 4 4                                                           
+          Input number of rows: 5
+               1
+              2 2
+             3 3 3
+            4 4 4 4
            5 5 5 5 5
- 
+
          */
 
         int n;
-        
+
         cout << "Enter the number of rows" << endl;
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
-            for (int j = 1; j <= n-i+1; j++)
+            for (int j = 1; j <= n - i + 1; j++)
             {
-                cout<<" ";
+                cout << " ";
             }
-            
+
             for (int j = 1; j < i + 1; j++)
             {
-                cout <<i<<" ";
-               
-
+                cout << i << " ";
             }
             cout << endl;
         }
@@ -266,46 +261,166 @@ int main()
     case 9:
     {
         /*
-            Write a program in C++ to display the pattern like a pyramid using asterisk 
-            and each row contain an odd number of asterisks. 
+            Write a program in C++ to display the pattern like a pyramid using asterisk
+            and each row contain an odd number of asterisks.
             Sample Output:
- 
-                                                     
-           Input number of rows: 5                                               
-                                                                       
-             *                                                                  
-            ***                                                                 
-           *****                                                                
-          ******* 
- 
+
+
+           Input number of rows: 5
+
+             *
+            ***
+           *****
+          *******
+
          */
 
         int n;
-        
+
         cout << "Enter the number of rows" << endl;
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
-            for (int j = 1; j <= n-i+1; j++)
+            for (int j = 1; j <= n - i + 1; j++)
             {
-                cout<<" ";
+                cout << " ";
             }
-            
-            for (int j = 1; j <= 2*i - 1; j++)
+
+            for (int j = 1; j <= 2 * i - 1; j++)
             {
                 cout << "*";
-                
-
             }
             cout << endl;
         }
 
         break;
     }
-  
+    case 10:
+    {
+        /*
+                1
+              2 3 2
+            3 4 5 4 3
+          4 5 6 7 6 5 4
+        5 6 7 8 9 8 7 6 5
+
+         */
+
+        int n;
+        cout<<"Enter the number of rows \n";
+        cin >> n;
+        for (int i = 1; i < n + 1; i++)
+        {
+            for (int j = 1; j < n - i + 1; j++)
+            {
+                cout << "  ";
+            }
+            for (int j = 1; j < i + 1; j++)
+            {
+                cout << i + j - 1 << " ";
+            }
+            for (int j = i - 1; j > 0; j--)
+            {
+
+                cout << i + j - 1 << " ";
+            }
+            cout << endl;
+        }
+
+        break;
+    }
+    case 11:
+    {
+        /*
+              * * * * * * * * *
+                * * * * * * *
+                  * * * * *
+                    * * *
+                      *
+
+
+         */
+
+        int n;
+        cout<<"Enter the number of rows \n";
+        cin >> n;
+        for (int i = n; i > 0; i--)
+        {
+            for (int j = n - i + 1; j > 0 ; j--)
+            {
+                cout << "  ";
+            }
+            for (int j = 2*i-1; j > 0 ; j--)
+            {
+                cout << "*" << " ";
+            }
+            
+            for (int j = 1; j < i-4 ; j++)
+            {
+                cout << "*" << " ";
+            }
+            
+            cout << endl;
+        }
+
+        break;
+    }
+    case 12:
+    {
+      /*
+                 *
+                **
+               ***
+              ****
+             *****
+            ******
+           *******
+          ********
+           *******
+            ******
+             *****
+              ****
+               ***
+                **
+                 *
+
+*/
+
+
+    int n = 8;
+    cout<<"Enter the number of rows \n"<<endl;
+    cin>>n;
+    for (int i = 0; i < n+1; i++)
+    {
+        for (int j = 1; j <= n-i+1; j++)
+        {
+            cout<<" ";
+        }
+        for (int j = 1; j < i+1; j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    for (int i = n-1; i > 0; i--)
+    {
+        for (int j = n-i+1; j > 0; j--)
+        {
+            cout<<" ";
+        }
+        for (int j = i; j >0 ; j--)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+        break;
+    }
 
     default:
-    cout<<"aap kirpya mje kijye aur dobara try kre 😅😅";
+        cout << "aap kirpya mje kijye aur dobara try kre 😅😅";
         break;
     }
     return 0;
