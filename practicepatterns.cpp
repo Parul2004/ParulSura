@@ -307,7 +307,7 @@ int main()
          */
 
         int n;
-        cout<<"Enter the number of rows \n";
+        cout << "Enter the number of rows \n";
         cin >> n;
         for (int i = 1; i < n + 1; i++)
         {
@@ -342,24 +342,26 @@ int main()
          */
 
         int n;
-        cout<<"Enter the number of rows \n";
+        cout << "Enter the number of rows \n";
         cin >> n;
         for (int i = n; i > 0; i--)
         {
-            for (int j = n - i + 1; j > 0 ; j--)
+            for (int j = n - i + 1; j > 0; j--)
             {
                 cout << "  ";
             }
-            for (int j = 2*i-1; j > 0 ; j--)
+            for (int j = 2 * i - 1; j > 0; j--)
             {
-                cout << "*" << " ";
+                cout << "*"
+                     << " ";
             }
-            
-            for (int j = 1; j < i-4 ; j++)
+
+            for (int j = 1; j < i - 4; j++)
             {
-                cout << "*" << " ";
+                cout << "*"
+                     << " ";
             }
-            
+
             cout << endl;
         }
 
@@ -367,85 +369,153 @@ int main()
     }
     case 12:
     {
-      /*
-                 *
-                **
-               ***
-              ****
-             *****
-            ******
-           *******
-          ********
-           *******
-            ******
-             *****
-              ****
-               ***
-                **
-                 *
+        /*
+                   *
+                  **
+                 ***
+                ****
+               *****
+              ******
+             *******
+            ********
+             *******
+              ******
+               *****
+                ****
+                 ***
+                  **
+                   *
 
-*/
+  */
 
+        int n = 8;
+        cout << "Enter the number of rows" << endl;
+        cin >> n;
+        for (int i = 0; i < n + 1; i++)
+        {
+            for (int j = 1; j <= n - i + 1; j++)
+            {
+                cout << " ";
+            }
+            for (int j = 1; j < i + 1; j++)
+            {
+                cout << "*";
+            }
+            cout << endl;
+        }
 
-    int n = 8;
-    cout<<"Enter the number of rows"<<endl;
-    cin>>n;
-    for (int i = 0; i < n+1; i++)
-    {
-        for (int j = 1; j <= n-i+1; j++)
+        for (int i = n - 1; i > 0; i--)
         {
-            cout<<" ";
+            for (int j = n - i + 1; j > 0; j--)
+            {
+                cout << " ";
+            }
+            for (int j = i; j > 0; j--)
+            {
+                cout << "*";
+            }
+            cout << endl;
         }
-        for (int j = 1; j < i+1; j++)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
-    }
-    
-    for (int i = n-1; i > 0; i--)
-    {
-        for (int j = n-i+1; j > 0; j--)
-        {
-            cout<<" ";
-        }
-        for (int j = i; j >0 ; j--)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
-    }
 
         break;
     }
     case 13:
     {
-      /*
-            A 
-            B C 
-            D E F 
-            G H I J 
-            K L M N O 
+        /*
+              A
+              B C
+              D E F
+              G H I J
+              K L M N O
 
-*/
+  */
 
-
-    int n;
-    int k = 1;
-    cout<<"Enter the number of rows"<<endl;
-    cin>>n;
-    for (int i = 1; i < n+1; i++)
-    {
-       
-        for (int j = 1; j < i+1; j++)
+        int n;
+        int k = 1;
+        cout << "Enter the number of rows" << endl;
+        cin >> n;
+        for (int i = 1; i < n + 1; i++)
         {
-            cout<<char(64+k)<<" ";
-            k++;
+
+            for (int j = 1; j < i + 1; j++)
+            {
+                cout << char(64 + k) << " ";
+                k++;
+            }
+            cout << endl;
         }
-        cout<<endl;
+
+        break;
     }
-    
-   
+    case 14:
+    {
+        /*
+              **********
+              ****  ****
+              ***    ***
+              **      **
+              *        *
+
+  */
+        int n;
+        cout << "Enter the number of rows \n";
+
+        cin >> n;
+        for (int i = n; i > 0; i--)
+        {
+            for (int j = i; j > 0; j--)
+            {
+                cout << "*";
+            }
+            for (int j = n - i; j > 0; j--)
+            {
+                cout << "  ";
+            }
+            for (int j = i - 1; j >= 0; j--)
+            {
+                cout << "*";
+            }
+            cout << endl;
+        }
+
+        break;
+    }
+    case 15:
+    {
+        /*
+
+                    ******
+                    *****
+                    ****
+                    ***
+                    **
+                    *
+                    **
+                    ***
+                    ****
+                    *****
+                    ******
+
+  */
+        int n;
+        cout << "Enter the number of rows \n";
+        cin >> n;
+        for (int i = n; i > 0; i--)
+        {
+            for (int j = i; j > 0; j--)
+            {
+                cout << "*";
+            }
+            cout << endl;
+        }
+        for (int i = 1; i < n; i++)
+        {
+            for (int j = 1; j <= i + 1; j++)
+            {
+                cout << "*";
+            }
+            cout << endl;
+        }
 
         break;
     }
