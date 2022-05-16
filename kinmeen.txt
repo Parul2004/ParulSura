@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-hello kinmeen
-=======
-hello kinmeen
-kya haal h aapke
->>>>>>> 7827d59111cb145db741cf56a674f554c5b786ad
-
-or bidu 
